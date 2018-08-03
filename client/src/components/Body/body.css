@@ -1,0 +1,15 @@
+.welcome{
+    font-size: 80px;
+}
+.content{
+    text-align: center;
+}
+section{
+    display: inline;
+    clear: both;
+}
+.profileimg{
+    border-radius: 50%;
+    max-width: 50%;
+    max-height: 75%;
+}
