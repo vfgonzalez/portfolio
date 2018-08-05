@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === "production") {
 // Define API routes here
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/personalwebsitedb");
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/personalwebsitedb");
 
 
 // API calls
