@@ -3,6 +3,7 @@ import "./App.css";
 import Nav from "./components/Nav/Nav"
 import Body from "./components/Body/Body"
 import Tech from "./components/Technologies/Tech"
+import Projectsect from "./components/Projects/Projects"
 import API from "./utils/API";
 // import ProjectGrid from "./components/Projects/Projects"
 
@@ -37,6 +38,7 @@ class App extends Component {
 
 
         {/* <ProjectGrid/> */}
+        <Projectsect/>
 
               
 

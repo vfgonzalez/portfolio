@@ -46,7 +46,7 @@ function Nav(props) {
           </Typography>
           <FormDialog/>
           
-          <Login/>
+          {/* <Login/> */}
 
 
         </Toolbar>

@@ -7,7 +7,9 @@ export default {
   getProjects: function() {
     return axios.get("/api/projects")
   },
-
+  sendMessage: function(data){
+    return axios.post("/api/send", data)
+  },
   // Deletes the resource with the given id
   deleteProject: function(title) {
     return axios.delete("/api/projects/" + title);

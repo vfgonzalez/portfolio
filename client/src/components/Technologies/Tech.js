@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Collapsible, CollapsibleItem, Col } from 'react-materialize'
+import { Collapsible, CollapsibleItem, Col, Row } from 'react-materialize'
 import "./tech.css"
 
 
@@ -13,9 +13,10 @@ class Tech extends Component {
             <h1>Skills
             </h1>
 
-            <div className='text-align center'>
+            <div className=''>
+                <Row className="valign">
 
-                <Col s={4} >
+                <Col offset='s2 l2' s={8} >
                 <Collapsible>
                     <CollapsibleItem header='HTML'>
                         <img className="tech-icons" src="../images/technologies/html5.png" alt="html5"/>
@@ -67,6 +68,7 @@ class Tech extends Component {
                 </Collapsible>
 
                 </Col>
+                </Row>
             </div>
 
 

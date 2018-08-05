@@ -7,11 +7,14 @@
   "dependencies": {
     "@material-ui/core": "^1.2.1",
     "@material-ui/icons": "^1.1.0",
+    "axios": "^0.18.0",
     "material-ui-password-field": "^2.0.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-images-upload": "^1.1.99",
-    "react-scripts": "1.0.14"
+    "react-materialize": "^2.3.3",
+    "react-scripts": "1.0.14",
+    "reactstrap": "^6.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
