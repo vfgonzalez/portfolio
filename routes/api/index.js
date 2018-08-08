@@ -8,6 +8,6 @@ const contactRoutes = require("./contactroutes")
 // router.use("/blog", blogRoutes);
 // router.use("/projects", projectRoutes);
 // router.use("/technologies", techKnownRoutes);
-router.use("/send", contactRoutes )
+// router.use("/send", contactRoutes )
 
 module.exports = router;
