@@ -112,7 +112,14 @@ class Projectsect extends Component {
             <Col l={4}> 
           <Card className='grey' header={<CardTitle reveal image={"./images/projects/rpg/rpg.png"} waves='light'/>}
               title="Big Bang Theory Game"
-              reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
+              reveal={
+                <div>
+                <p>Nerd Battle! RPG Game that challenges each scientist until the end. </p>
+                  <hr/>
+                  <h5>Tech</h5>
+                  <p>HTML, CSS, JavaScript, Bootstrap 4, jQuery</p>
+                </div>
+              }>
               <Button className=' btn-flat grey'>
              <a  href="https://vfgonzalez.github.io/bigbangtheorygame/" rel="noopener noreferrer" target='_blank'><i className="fas fa-external-link-alt"></i></a>
               </Button>
