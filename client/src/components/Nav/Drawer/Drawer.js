@@ -38,16 +38,16 @@ class TemporaryDrawer extends React.Component {
 
         const sideList = (
             <div className={classes.list}>
-                <h2>Vicente Gonzalez</h2>
+                <h4>Vicente Gonzalez</h4>
                 <Divider/>
                 <List>
                     <a href="https://github.com/vfgonzalez" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i>  Github</a>
                     <br/>
-                    <a href="https://www.linkedin.com/in/vfgonzalez/" target="_blank" rel="noopener noreferrer"> <i className="fab fa-linkedin"></i>    Linkedin</a>
+                    <a href="https://www.linkedin.com/in/vfgonzalez/" target="_blank" rel="noopener noreferrer"> <i className="fab fa-linkedin"></i>    LinkedIn</a>
                 </List>
                 <Divider />
                 <List>
-                    <a href="https://www.facebook.com/profile.php?id=100011258105181" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook-square"></i>Facebook</a>
+                    <a href="https://www.facebook.com/profile.php?id=100011258105181" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook-square"></i>facebook</a>
                     
                 </List>
             </div>

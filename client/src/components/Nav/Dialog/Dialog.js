@@ -34,19 +34,19 @@ handleInputChange = event => {
 
   // );
   
- API.sendMessage( {
-   title: this.state.title,
-   email: this.state.email,
-   phone: this.state.phone,
-   message: this.state.message
- })
-  .catch(err => console.log(err)); 
-  this.notify()
+//  API.sendMessage( {
+//    title: this.state.title,
+//    email: this.state.email,
+//    phone: this.state.phone,
+//    message: this.state.message
+//  })
+//   .catch(err => console.log(err)); 
+//   this.notify()
 }
 
 notify = () => toast.success("Your message has been sent.");
 
-  render() {
+  render(){
     return (
       <div>
         <Modal
@@ -91,8 +91,10 @@ notify = () => toast.success("Your message has been sent.");
        
           {/* Trial Code */}
 
-          <h5>For inquiries please fill out below.</h5>
-          <p>I will reply within 24 hours. Thank you.</p>
+          {/* <h5>For inquiries please fill out below.</h5>
+          <p>I will reply within 24 hours. Thank you.</p> */}
+          <p>Contact Form Under Construction, please email or call me via number below:</p>
+          <p>Thank you.</p>
           <hr/>
           <br/>
 
@@ -147,7 +149,7 @@ notify = () => toast.success("Your message has been sent.");
 
             </FormGroup>
             <Button 
-            onClick={this.handleSubmit} type="submit" className="grey darken-3 modal-close">Submit</Button>
+            onClick={this.handleSubmit} disabled type="submit" className="grey darken-3 modal-close">Submit</Button>
 
         </Form>
 
