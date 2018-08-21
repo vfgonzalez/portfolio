@@ -2,9 +2,6 @@
   "name": "vicenteportfolio",
   "version": "0.1.0",
   "description": "Vicente Portfolio",
-  "engines": {
-    "node": "8.9.4"
-  },
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {

@@ -1,10 +1,7 @@
 {
-  "name": "vicenteportfolio",
-  "version": "0.1.0",
-  "description": "Vicente Portfolio",
-  "engines": {
-    "node": "8.9.4"
-  },
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "Mern Demo",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -24,6 +21,8 @@
     "nodemon": "^1.18.3"
   },
   "dependencies": {
+    "@material-ui/core": "^1.5.1",
+    "@material-ui/icons": "^2.0.3",
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
