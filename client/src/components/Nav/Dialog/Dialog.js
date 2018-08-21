@@ -33,9 +33,9 @@ class FormDialog extends Component {
     }
   
    handleSubmit (e) {
-    if(!this.state.isVerified){
-      alert("Please verify you are a human")
-    }else{
+    // if(!this.state.isVerified){
+    //   alert("Please verify you are a human")
+    // }else{
     e.preventDefault()
     
     const {name, email, message, number} = this.state
@@ -48,7 +48,7 @@ class FormDialog extends Component {
     })
     
     this.notify()
-  }
+  // }
   }
 
   notify = () => toast.success("Your message has been sent.");
