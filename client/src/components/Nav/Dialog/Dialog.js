@@ -4,6 +4,7 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Form, FormGroup, Input, Label } from 'reactstrap'
+import Recaptcha from 'react-recaptcha'
 
 
 
@@ -16,7 +17,8 @@ class FormDialog extends Component {
         name: "",
         number: "",
         email: "",
-        message: ""
+        message: "",
+        isVerified: false
       }
 
       this.handleChange = this.handleChange.bind(this)
@@ -31,6 +33,9 @@ class FormDialog extends Component {
     }
   
    handleSubmit (e) {
+    if(!this.state.isVerified){
+      alert("Please verify you are a human")
+    }else{
     e.preventDefault()
     
     const {name, email, message, number} = this.state
@@ -44,6 +49,8 @@ class FormDialog extends Component {
     
     this.notify()
   }
+  }
+
   notify = () => toast.success("Your message has been sent.");
 
 
