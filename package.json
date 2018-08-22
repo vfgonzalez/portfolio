@@ -21,8 +21,6 @@
     "nodemon": "^1.18.3"
   },
   "dependencies": {
-    "@material-ui/core": "^1.5.1",
-    "@material-ui/icons": "^2.0.3",
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",

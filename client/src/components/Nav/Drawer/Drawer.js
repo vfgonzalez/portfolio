@@ -8,7 +8,6 @@ import Divider from '@material-ui/core/Divider';
 import MenuIcon from '@material-ui/icons/Menu';
 import "./drawer.css"
 
-// import FormDialog from "../Dialog/Dialog"
 
 const styles = {
     list: {
@@ -45,11 +44,11 @@ class TemporaryDrawer extends React.Component {
                     <br/>
                     <a href="https://www.linkedin.com/in/vfgonzalez/" target="_blank" rel="noopener noreferrer"> <i className="fab fa-linkedin"></i>    LinkedIn</a>
                 </List>
-                <Divider />
                 <List>
                     <a href="https://www.facebook.com/profile.php?id=100011258105181" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook-square"></i>facebook</a>
                     
                 </List>
+                <Divider />
             </div>
         );
 

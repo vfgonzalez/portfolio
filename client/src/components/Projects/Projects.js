@@ -24,10 +24,10 @@ class Projectsect extends Component {
               </div>
               }>
               <Button className=' btn-flat grey'>
-                <a href="http://slackoverflow2.herokuapp.com/" rel="noopener noreferrer" target='_blank'><i className="fas fa-external-link-alt"></i></a>
+                <a href="http://slackoverflow2.herokuapp.com/" rel="noopener noreferrer" target='_blank'><i className="fas fa-external-link-alt black-text"></i></a>
                 </Button>
                 <Button className=' btn-flat grey'>
-               <a href="https://github.com/vfgonzalez/slackoverflow1" rel="noopener noreferrer" target='_blank'><i className="fab fa-github"></i></a>
+               <a href="https://github.com/vfgonzalez/slackoverflow1" rel="noopener noreferrer" target='_blank'><i className="fab fa-github black-text"></i></a>
                 </Button>
             </Card>
               </Col>
@@ -43,10 +43,10 @@ class Projectsect extends Component {
               </div>
               }>
               <Button className=' btn-flat grey'>
-                <a href="https://slackerflow.herokuapp.com/" rel="noopener noreferrer" target='_blank'><i className="fas fa-external-link-alt"></i></a>
+                <a href="https://slackerflow.herokuapp.com/" rel="noopener noreferrer" target='_blank'><i className="fas fa-external-link-alt black-text"></i></a>
               </Button>
-              <Button className=' btn-flat grey'>
-               <a href="https://github.com/vfgonzalez/slackoverflow1" rel="noopener noreferrer" target='_blank'><i className="fab fa-github"></i></a>
+              <Button className='btn-flat grey'>
+               <a href="https://github.com/vfgonzalez/slackoverflow1" rel="noopener noreferrer" target='_blank'><i className="fab fa-github black-text"></i></a>
               </Button>
             </Card>
               </Col>
@@ -62,10 +62,10 @@ class Projectsect extends Component {
                 </div>
               }>
               <Button className=' btn-flat grey'>
-              <a href="https://vfgonzalez.github.io/Enablr/" rel="noopener noreferrer" target='_blank'><i className="fas fa-external-link-alt"></i></a> 
+              <a href="https://vfgonzalez.github.io/Enablr/" rel="noopener noreferrer" target='_blank'><i className="fas fa-external-link-alt black-text"></i></a> 
               </Button>
               <Button className=' btn-flat grey'>      
-              <a href="https://github.com/vfgonzalez/Enablr" rel="noopener noreferrer" target='_blank'><i className="fab fa-github"></i></a>
+              <a href="https://github.com/vfgonzalez/Enablr" rel="noopener noreferrer" target='_blank'><i className="fab fa-github black-text"></i></a>
               </Button>
               
              
@@ -86,7 +86,7 @@ class Projectsect extends Component {
                 </div>
               }>
               <Button className=' btn-flat grey'>
-               <a href="https://github.com/vfgonzalez/liri-node-app" rel="noopener noreferrer" target='_blank'><i className="fab fa-github"></i></a>
+               <a href="https://github.com/vfgonzalez/liri-node-app" rel="noopener noreferrer" target='_blank'><i className="fab fa-github black-text"></i></a>
               </Button>
              
             </Card>
@@ -103,9 +103,9 @@ class Projectsect extends Component {
                 </div>
               }>
               <Button className='btn-flat grey'>
-              <a href="https://vfgonzalez.github.io/Train-Scheduler/" rel="noopener noreferrer" target='_blank'><i className="fas fa-external-link-alt"></i></a>
+              <a href="https://vfgonzalez.github.io/Train-Scheduler/" rel="noopener noreferrer" target='_blank'><i className="fas fa-external-link-alt black-text"></i></a>
               </Button>
-              <a href="https://github.com/vfgonzalez/Train-Scheduler" rel="noopener noreferrer" target='_blank'><i className="fab fa-github"></i></a>
+              <a href="https://github.com/vfgonzalez/Train-Scheduler" rel="noopener noreferrer" target='_blank'><i className="fab fa-github black-text"></i></a>
               <Button className=' btn-flat grey'></Button>
             </Card>
               </Col>
@@ -121,10 +121,10 @@ class Projectsect extends Component {
                 </div>
               }>
               <Button className=' btn-flat grey'>
-             <a  href="https://vfgonzalez.github.io/bigbangtheorygame/" rel="noopener noreferrer" target='_blank'><i className="fas fa-external-link-alt"></i></a>
+             <a  href="https://vfgonzalez.github.io/bigbangtheorygame/" rel="noopener noreferrer" target='_blank'><i className="fas fa-external-link-alt black-text"></i></a>
               </Button>
              <Button className=' btn-flat grey'>
-             <a href="https://github.com/vfgonzalez/bigbangtheorygame" rel="noopener noreferrer" target='_blank'><i className="fab fa-github"></i></a>
+             <a href="https://github.com/vfgonzalez/bigbangtheorygame" rel="noopener noreferrer" target='_blank'><i className="fab fa-github black-text"></i></a>
              </Button>
             </Card>
               </Col>
