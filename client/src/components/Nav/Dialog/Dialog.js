@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Button, Modal, Icon } from 'react-materialize'
 import axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Form, FormGroup, Input, Label } from 'reactstrap'
 import Recaptcha from 'react-recaptcha'
@@ -33,8 +33,7 @@ class FormDialog extends Component {
     }
   
     recaptchaLoaded (){
-      console.log('Recaptcha successful');
-      
+      // console.log('Recaptcha successful');
     }
 
     verifyCallback(res) {
@@ -71,9 +70,11 @@ class FormDialog extends Component {
 
   notify = () => toast.success("Your message has been sent.");
 
-  alert = () => toast.error("Please Verify!", {
+  alert = () => toast.error(
+    `Uh-Oh, Please Confirm you are Not a Bot.`, 
+    {
     position: toast.POSITION.TOP_CENTER,
-    rtl: false
+    transition: Zoom
   });
 
 
@@ -89,11 +90,8 @@ class FormDialog extends Component {
 
           <h5>For inquiries please fill out below.</h5>
           <p>I will reply within 24 hours. Thank you.</p>
-          {/* <p>Contact Form Under Construction, please email or call me via number below:</p>
-          <p>Thank you.</p> */}
           <hr />
           <br />
-
           <Form 
           onSubmit={this.handleSubmit}>
               <FormGroup>
@@ -141,15 +139,6 @@ class FormDialog extends Component {
                 onloadCallback={this.recaptchaLoaded}
                 />
                 </FormGroup>
-              {/* <FormGroup>
-              <div 
-              name="captcha"
-              onChange={this.handleChange}
-              class="g-recaptcha" 
-              data-sitekey="6LeJh2oUAAAAABfr8xFawMN6mW1j0h5YbPg9zn1K">
-              </div>
-              </FormGroup> */}
- 
                 <br/>
                 <br/>
               <Button
@@ -159,65 +148,15 @@ class FormDialog extends Component {
               >SUBMIT<Icon right>send</Icon></Button>
           </Form>
 
-
-          {/* <Row
-          onSubmit={this.handleSubmit}
-          >
-            <Input
-            label="Name"
-            name="name"
-            type="text"
-            placeholder="e.g. Vicente Gonzalez"
-            s={6}
-            onChange={this.handleChange}
-            />
-            <Input
-            validate
-            label="Number"
-            name="number"
-            type="tel"
-            placeholder="e.g. 714-650-4700"
-            s={6}
-            onChange={this.handleChange}
-            />
-            <Input
-            validate
-            label="Email"
-            name="email"
-            type="email"
-            placeholder="e.g. vgonzalez28@gmail"
-            s={12}
-            onChange={this.handleChange}
-            />
-            <Input
-            label="Message"
-            name="message"
-            type="textarea"
-            placeholder="Please type your message here"
-            s={12}
-            onChange={this.handleChange}
-            />
-            
-            
-              <Button
-                // onSubmit={this.handleSubmit}
-                type="submit"
-                value="submit"
-                className="floating grey darken-2 white-text modal-close"
-                >SUBMIT<Icon right>send</Icon></Button>
-          </Row>  
-       */}
-
-
-
         </Modal>
         <ToastContainer
-          position="top-right"
+          position="top-center"
           autoClose={2500}
           hideProgressBar={true}
           newestOnTop={false}
           closeOnClick
           rtl={false}
+          transition={Zoom}
           pauseOnVisibilityChange
           draggable
         />
