@@ -4,7 +4,7 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Form, FormGroup, Input, Label } from 'reactstrap'
-//import Recaptcha from 'react-recaptcha'
+import Recaptcha from 'react-recaptcha'
 
 
 
@@ -12,18 +12,18 @@ class FormDialog extends Component {
 
     constructor(){
       super()
-
       this.state = {
         name: "",
         number: "",
         email: "",
         message: "",
+        // captcha: "",
         isVerified: false
       }
-
       this.handleChange = this.handleChange.bind(this)
       this.handleSubmit = this.handleSubmit.bind(this)
-
+      this.recaptchaLoaded = this.recaptchaLoaded.bind(this)
+      this.verifyCallback = this.verifyCallback.bind(this)
     }
 
     handleChange(e){
@@ -32,26 +32,49 @@ class FormDialog extends Component {
       })
     }
   
+    recaptchaLoaded (){
+      console.log('Recaptcha successful');
+      
+    }
+
+    verifyCallback(res) {
+      if(res){
+        this.setState({
+          isVerified : true
+        })
+      }
+    }
    handleSubmit (e) {
-    // if(!this.state.isVerified){
-    //   alert("Please verify you are a human")
-    // }else{
-    e.preventDefault()
-    
-    const {name, email, message, number} = this.state
-    
-    const form =  axios.post("/send", {
-      name,
-      number,
-      email,
-      message
-    })
-    
-    this.notify()
-  // }
+     if(!this.state.isVerified){
+      e.preventDefault()
+      this.alert()
+    }else{
+    // if(
+    //   this.state.captcha=== undefined ||
+    //   this.state.captcha === '' ||
+    //   this.state.captcha === null
+    //   ){
+    //     return ( alert("Please verify you are not a robot."))
+    //   }else{  
+            e.preventDefault()
+            const {name, email, message, number} = this.state
+            const form =  axios.post("/send", {
+              name,
+              number,
+              email,
+              message,
+              // captcha
+            })
+            this.notify()
+          }
   }
 
   notify = () => toast.success("Your message has been sent.");
+
+  alert = () => toast.error("Please Verify!", {
+    position: toast.POSITION.TOP_CENTER,
+    rtl: false
+  });
 
 
   render() {
@@ -109,6 +132,24 @@ class FormDialog extends Component {
                 onChange={this.handleChange}
                 />
               </FormGroup>
+              <br/>
+              <FormGroup>
+              <Recaptcha
+                sitekey="6LeJh2oUAAAAABfr8xFawMN6mW1j0h5YbPg9zn1K"
+                render="explicit"
+                verifyCallback={this.verifyCallback}
+                onloadCallback={this.recaptchaLoaded}
+                />
+                </FormGroup>
+              {/* <FormGroup>
+              <div 
+              name="captcha"
+              onChange={this.handleChange}
+              class="g-recaptcha" 
+              data-sitekey="6LeJh2oUAAAAABfr8xFawMN6mW1j0h5YbPg9zn1K">
+              </div>
+              </FormGroup> */}
+ 
                 <br/>
                 <br/>
               <Button
