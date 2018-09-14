@@ -7,7 +7,6 @@ import { Form, FormGroup, Input, Label } from 'reactstrap'
 import Recaptcha from 'react-recaptcha'
 
 
-
 class FormDialog extends Component {
 
     constructor(){
@@ -83,7 +82,7 @@ class FormDialog extends Component {
       <div>
         <Modal
           // fixedFooter
-          trigger={<Button className='btn-flat transparent'>CONTACT ME</Button>}>
+          trigger={<Button className='btn-flat'>CONTACT ME</Button>}>
 
 
           {/* Trial Code */}

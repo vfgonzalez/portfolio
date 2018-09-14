@@ -18,9 +18,17 @@ class Body extends Component {
             <Row>
               <Col offset='m3' m={6}>
                 <h5 className="animated fadeInUp slower delay-5s">
-                  Hi! My name is Vicente Gonzalez, and I am a Full Stack Developer from UCI's Continuing Education Full Stack Web Development Program.
-                  I'm an ambitious creator with real life problem solving experience. Please enjoy browsing through my page to learn more about my projects and tech knowledge.
+                  Hi! My name is Vicente Gonzalez, and I'm a Software Developer from UCI's Continuing Education Full Stack Web Development Program.
                 </h5>
+                <h5 className="animated fadeInRight slower delay-5s">
+                  Having a background in Business Administration with an emphasis in Finance from Cal Poly Pomona,I dove into the world of underwriting consumer loans.
+                  After being involved user acceptance testing (UAT) for new software releases, I knew learning the how and why development works would be my next calling.
+                </h5>
+                <h5 className="animated fadeInLeft slower delay-5s">
+                  I'm an ambitious creator with real life problem solving experience, and as my knowledge and projects expand, I am intrigued with the world of Internet of Things, and passionate about learning more.
+                  Please enjoy browsing through my page to learn more about my projects and tech knowledge.
+                </h5>
+                <h5 className="animated fadeInUp slower delay-5s">Thanks for visiting!</h5>
               </Col>
             </Row>
           </section>

@@ -3,7 +3,6 @@ import { Row, Col } from 'react-materialize'
 import FormDialog from "./Dialog/Dialog"
 // import Login from "./Login/Login"
 
-
 import Sidebar from "./Sidebar/Sidebar"
 
 class Nav extends Component {

@@ -9,7 +9,7 @@ class Sidebar extends Component{
         return(
 
             <SideNav
-            trigger={<Button flat ><Icon large left>menu</Icon></Button>}
+            trigger={<Button className="pulse" flat ><Icon large left>menu</Icon></Button>}
             options={{ closeOnClick: true }}
             >
             <SideNavItem userView
