@@ -29,6 +29,7 @@ class Tech extends Component {
                         <img className="tech-icons" src="../images/technologies/bootstrap.png" alt="Bootstrap"/>
                         <img className="tech-icons" src="../images/technologies/foundation.png" alt="Foundation"/>
                         <img className="tech-icons" src="../images/technologies/materialize.png" alt="Bootstrap"/>
+                        <img className="tech-icons" src="../images/technologies/semanticui.png" alt="Semantic UI"/>
                     </div>
                         </CollapsibleItem>
                     <CollapsibleItem className='hovertech' header='Javascript'>
@@ -45,6 +46,7 @@ class Tech extends Component {
                     <div className="row">
                         <img className="tech-icons" src="../images/technologies/mongodb.png" alt="MongoDB"/>
                         <img className="tech-icons" src="../images/technologies/sql.png" alt="SQL"/>
+                        <img className="tech-icons" src="../images/technologies/mysql.png" alt="MySQL"/>
                     </div>
                         </CollapsibleItem>
                     <CollapsibleItem className='hovertech' header='Other' >
